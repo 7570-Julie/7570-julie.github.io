@@ -1,0 +1,90 @@
+/* Titelbalk */
+
+.titelbalk { 
+	background-color: #f2dcdd;
+	width: 100%; 
+	height: 350px;
+	text-align: center; 
+	vertical-align: middle;
+} 
+.inleiding {
+	width: 400px; 
+	display: inline; 
+	float: left; 
+} 
+.logo { 
+	width: 170px; 
+	display: inline; 
+} 
+.logo img {
+	/*width: 100%;*/
+	margin-top: 100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */  
+header {
+  background-color: #000000 ;
+  padding: 30px;
+  text-align: center; 
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left; 
+  width: 30%;
+  height: 60%; /* only for demonstration, should be removed */
+  background: #d7d7d7;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: ;
+}
+
+article {
+  float: left; 
+  padding: 20px;
+  width: 70%;
+  background-color: #ffffff;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 400px 
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: 100%;
+  }
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
