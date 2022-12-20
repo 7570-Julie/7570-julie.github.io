@@ -11,6 +11,7 @@
 	width: 400px; 
 	display: inline; 
 	float: left; 
+	margin-top: 80px;
 } 
 .logo { 
 	width: 170px; 
@@ -18,11 +19,22 @@
 } 
 .logo img {
 	/*width: 100%;*/
-	margin-top: 100px;
+	margin-top: 80px;
+}
+.spreuk{
+	width: 400px;
+	display: inline; 
+	float: right; 
+	height: 100%;
+	margin-top: 80px;
+} 
+.spreuk img {
+	/*width: 100%;*/
 }
 
+
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 
 body {
@@ -30,7 +42,7 @@ body {
 }
 /* Style the header */  
 header {
-  background-color: #000000 ;
+  background-color: #f2dcdd ;
   padding: 30px;
   text-align: center; 
   font-size: 35px;
@@ -41,7 +53,7 @@ header {
 nav {
   float: left; 
   width: 30%;
-  height: 60%; /* only for demonstration, should be removed */
+  height: 300px; /* only for demonstration, should be removed */
   background: #d7d7d7;
   padding: 20px;
 }
@@ -69,22 +81,18 @@ section::after {
 
 /* Style the footer */
 footer {
-  background-color: #000000;
+  background-color: #f5c4d7;
   padding: 10px;
   text-align: center;
   color: white;
-  height: 400px 
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
-.myDiv {
-  border: 5px outset red;
-  background-color: lightblue;    
-  text-align: center;
-}
+
+</div>
